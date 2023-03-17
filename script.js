@@ -67,9 +67,9 @@ const generatePara = () => {
         // const data = paragraph.slice(0 , items.value)
         console.log(data)
 
-        const paras = data.map((d) => {
+        const paras = data.map((d , a) => {
             return(
-                `<p> ${d}</p>`
+                `<span>${a+1})</span><p> ${d}</p>`
             )
         })
         console.log(paras);
